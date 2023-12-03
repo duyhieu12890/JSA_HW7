@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="label-select">Select exercise to check homework</h2>
+            <input type="button" value="Bai 1" onclick="showBai1()" class="btn-select">
+            <input type="button" value="Bai 2" onclick="showBai2()" class="btn-select">
+        </div>
+        <div id="bai1">
+            <div class="container-bai">
+                <h2 class="label">Giải Nghiệm ax+b=0</h2>
+                <h3 class="label-input">Nhập a</h3>
+                <input type="text" name="" id="a_value" class="input_value" placeholder="" required>
+                <h3 class="label-input">Nhập b</h3>
+                <input type="text" name="" id="b_value" class="input_value" placeholder="" required><br>
+                <input type="button" value="Giải" onclick="equation()" class="btn">
+                <h3 id="showKQ"></h3>
+            </div>
+        </div>
+        <div id="bai2">
+            <div class="container-bai">
+                <h2 class="label">Tính các chiều dài theo đề bài</h2>
+                <h3 class="label-input">Nhập số đo cạnh thứ nhất</h3>
+                <input type="text" name="" id="sda" class="input_value" placeholder="" required>
+                <h3 class="label-input">Nhập số đo cạnh thứ hai</h3>
+                <input type="text" name="" id="sdb" class="input_value" placeholder="" required><br>
+                <input type="button" value="Giải" onclick="triangle()" class="btn">
+                <h3 id="showKq1"></h3>
+                <h3 id="showKq2"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
